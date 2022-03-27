@@ -1,0 +1,565 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #fff;
+    max-width: 1520px;
+    min-width: 360px;
+    margin: 30px;
+    padding: 3.5rem;
+}
+
+/* HEADER */
+nav {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 22px;
+    margin-left: 30px;
+    /* padding: 1.5rem; */
+}
+
+nav .menu {
+    list-style: none;
+    float: right;
+    width: 100%;
+}
+
+nav .menu span {
+    color: #2A4AC8;
+    font-weight:bolder;
+    font-size: 30px;
+    clear: both;
+    float: left;
+}
+
+nav .menu a {
+    text-decoration: none;
+    color: #364156;
+    padding: .3rem;
+    float: right;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+nav .menu .button {
+    background-color: #2A4AC8;
+    color: #fff;
+    font-family:monospace;
+    font-weight:bolder;
+    font-size: 16px;
+    border: 1px solid #72A1E5;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    float: right;
+    margin-right: 1.5rem;
+    cursor: pointer;
+    box-shadow:2px 2px 5px #2A4AC8;
+}
+
+/* CONTENT */
+.content {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items:center;
+    /* justify-content: center; */
+}
+
+    /* LEFT */
+.content.left {
+    text-align: center;
+    width: 90%;
+    position: absolute;
+}
+
+.content .left .tittle {
+    color: #2A2A72;
+    font-size: 75px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.content .left .lema {
+    color: #B1B6A6;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+    padding-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.content .left .suggestion {
+    width: 75%;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items:center;
+    list-style: none;
+    padding-bottom: 2rem;
+}
+
+.content .left .suggestion li .icon1 {
+    margin-right:  1rem;
+}
+
+.content .left .suggestion li .icon2 {
+    margin-right:  1rem;
+}
+
+.content .left .suggestion a {
+    text-decoration: none;
+    color: #2A2A72;
+    font-weight: bold;
+}
+
+.content .left .schedule {
+    background-color: rgba(255, 255, 255, .8);
+    position: relative;
+    top: 125px;
+    left: 150px;
+    align-items: center;
+    border: 1px solid white;
+    z-index: 1;
+    /* padding: 1rem; */
+    display: flex;
+    flex-wrap: wrap;
+    color: #2D3095;
+}
+.content .left .schedule .principal {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.content .left .schedule .table {
+    display: flex;
+    flex-wrap:nowrap;
+    margin: 1.5rem;
+    padding-left: 2rem;
+}
+
+.content .left .schedule .table .location {
+    padding-right: 2.5rem;
+    text-align: left;
+    color: #B1B6A6;
+}
+
+.content .left .schedule .table .location .text1 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
+    color: #2D3095;
+}
+
+.content .left .schedule .table .date {
+    padding-right: 2rem;
+    text-align: left;
+    color: #B1B6A6;
+}
+
+.content .left .schedule .table .date .text2 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
+    color: #2D3095;
+}
+
+.content .left .schedule .table .vaccinType {
+    padding-right: 2rem;
+    text-align: left;
+    color: #B1B6A6;
+}
+
+.content .left .schedule .table .vaccinType .text3 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
+    color: #2D3095;
+}
+
+.content .left .schedule button {
+    background-color: #2A4AC8;
+    color: #fff;
+    font-family:monospace;
+    font-weight:500;
+    font-size: 20px;
+    border: 1px solid #72A1E5;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    float: right;
+    margin-right: 1.5rem;
+    cursor: pointer;
+    box-shadow:2px 2px 5px #2A4AC8;
+}
+
+
+    /* RIGHT */
+.content .right {
+    position:relative;
+    background-size: 100%;
+}
+
+/* SPONSORS */
+.sponsors {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* DESCRIPTION */
+
+.descriptionVaccine {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #2A2A72;
+}
+
+.descriptionVaccine .info {
+    width: 35%;
+}
+
+.descriptionVaccine .info .question {
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: left;
+}
+
+.descriptionVaccine .info .answer {
+    color: #B1B6A6;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.descriptionVaccine .features {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #2A4AC8;
+}
+
+    /* COLUMNA 1 */
+.descriptionVaccine .features .c1 {
+    padding-right: 2rem;
+    cursor: pointer;
+}
+
+.descriptionVaccine .features .c1 p {
+    color: #B1B6A6;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+    /* COLUMNA 2 */
+.descriptionVaccine .features .c2 {
+    padding-right: 2rem;
+    cursor: pointer;
+}
+
+.descriptionVaccine .features .c2 p {
+    color: #B1B6A6;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+    /* COLUMNA 3 */
+.descriptionVaccine .features .c3{
+    padding-right: 2rem;
+    cursor: pointer;
+}
+
+.descriptionVaccine .features .c3 p {
+    color: #B1B6A6;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+    /* COLUMNA 4 */
+.descriptionVaccine .features .c4 {
+    padding-right: 2rem;
+    cursor: pointer;
+}
+
+.descriptionVaccine .features .c4 p {
+    color: #B1B6A6;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* PREPARATION */
+.preparationVaccine {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items:center;
+    padding-top: 10rem;
+}
+
+    /* LEFT */
+.preparationVaccine .left {
+    width: 100%;
+    padding-right: 5rem;
+}
+
+    /* RIGHT */
+
+.preparationVaccine .right {
+    color: #2A2A72;
+}
+
+.preparationVaccine .right .tittlePreparation {
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: left;
+}
+
+.preparationVaccine .right .descriptionPreparation {
+    color: #B1B6A6;
+    font-weight: bold ;
+    line-height: 1.6;
+    font-size: 18px;
+    padding-bottom: 3rem;
+}
+
+.preparationVaccine .right .components li {
+    list-style: none;
+    font-size: 18px;
+    padding: 1.5rem;
+    font-weight: bold;
+}
+
+
+/* EMERGENCY CONTACT */
+.emergencyContact {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #2A2A72;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items:center;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+    /* LEFT */
+.emergencyContact .left {
+    padding-right: 4rem;
+}
+
+.emergencyContact .left .tittle {
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: left;
+}
+
+.emergencyContact .left .sub {
+    color: #B1B6A6;
+    font-weight: bold ;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+        /* CONTACTS */
+.emergencyContact .left .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    padding-left: 3rem;
+}
+
+            /* CALL */
+.emergencyContact .left .contacts .call {
+    padding: 1rem;
+    padding-right: 2rem;
+    text-align: center;
+    line-height: 1;
+}
+
+.emergencyContact .left .contacts .call .number {
+    color: #B1B6A6;
+}
+
+.emergencyContact .left .contacts .call button {
+    background-color: #2A4AC8;
+    color: #fff;
+    font-family:monospace;
+    font-size: 16px;
+    border: 1px solid #72A1E5;
+    border-radius: 5px;
+    width: 95%;
+    height: 40px;
+    text-align: center;
+    float: right;
+    margin-right: 1.5rem;
+    cursor: pointer;
+    box-shadow:2px 2px 5px #2A4AC8;
+}
+
+            /* CHAT */
+.emergencyContact .left .contacts .chat {
+    padding: 1rem;
+    padding-left: 2rem;
+    text-align: center;
+}
+
+.emergencyContact .left .contacts .chat .number {
+    color: #B1B6A6;
+}
+
+.emergencyContact .left .contacts .chat button {
+    background-color: #2A4AC8;
+    color: #fff;
+    font-family:monospace;
+    font-size: 16px;
+    border: 1px solid #72A1E5;
+    border-radius: 5px;
+    width: 95%;
+    height: 40px;
+    text-align: center;
+    float: right;
+    margin-right: 1.5rem;
+    cursor: pointer;
+    box-shadow:2px 2px 5px #2A4AC8;
+}
+
+            /* VIDEO CALL */
+.emergencyContact .left .contacts .videocall {
+    padding: 1rem;
+    padding-right: 2rem;
+    text-align: center;
+}
+
+.emergencyContact .left .contacts .videocall .number {
+    color: #B1B6A6;
+}
+
+.emergencyContact .left .contacts .videocall button {
+    background-color: #2A4AC8;
+    color: #fff;
+    font-family:monospace;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #72A1E5;
+    border-radius: 5px;
+    width: 105px;
+    height: 40px;
+    text-align: center;
+    float: right;
+    margin-right: 1.5rem;
+    cursor: pointer;
+    box-shadow:2px 2px 5px #2A4AC8;
+}
+
+            /* MESSAGE */
+.emergencyContact .left .contacts .message {
+    padding: 1rem;
+    padding-left: 2rem;
+    text-align: center;
+}
+
+.emergencyContact .left .contacts .message .number {
+    color: #B1B6A6;
+}
+
+.emergencyContact .left .contacts .message button {
+    background-color: #2A4AC8;
+    color: #fff;
+    font-family:monospace;
+    font-size: 16px;
+    border: 1px solid #72A1E5;
+    border-radius: 5px;
+    width: 95%;
+    height: 40px;
+    text-align: center;
+    float: right;
+    margin-right: 1.5rem;
+    cursor: pointer;
+    box-shadow:2px 2px 5px #2A4AC8;
+}
+
+    /* RIGHT */
+.emergencyContact .right {
+    padding-top: 10rem;
+}
+
+/* FOOTER */
+.pie {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #2A2A72;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items:center;
+    background-color: rgb(220, 233, 242);
+}
+
+    /* LEFT */
+.pie .left {
+    width: 40%;
+    color: #2A4AC8;
+}
+
+.pie p {
+    color: rgb(143, 143, 143);
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+    /* RIGHT */
+.pie .right {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+        /* TABLE */
+.pie .right table {
+    border-collapse: separate;
+    border-spacing: 55px 25px;
+}
+
+.pie .right .tittles {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.pie .right .renglones {
+    color: rgb(143, 143, 143);
+}
+
+    /* RIGHTS & TERMS */
+.pie .rightsTerms {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    color: rgb(143, 143, 143);
+}
+
+
+
+
